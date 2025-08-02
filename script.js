@@ -1,7 +1,7 @@
-// ===== Reveal Sections on Key Press =====
+// ===== Reveal Sections on Interaction =====
 let sectionsRevealed = false;
 
-document.addEventListener('keydown', () => {
+function revealSections() {
   if (!sectionsRevealed) {
     document.querySelectorAll('.reveal').forEach(section => {
       section.classList.remove('hidden');
@@ -12,12 +12,25 @@ document.addEventListener('keydown', () => {
       setTimeout(() => {
         hint.style.transition = 'opacity 0.5s ease';
         hint.style.opacity = 0;
-      }, 5000); // Let typing finish before fading
+      }, 5000);
     }
 
     sectionsRevealed = true;
   }
-});
+}
+
+// Listen for keyboard press
+document.addEventListener('keydown', revealSections);
+
+// Listen for mouse click or touch
+document.addEventListener('click', revealSections);
+document.addEventListener('touchstart', revealSections);
+
+// Update the hint text to reflect both interactions
+const hint = document.querySelector('.hint');
+if (hint) {
+  hint.textContent = '[ Press any key or tap anywhere to uncover the fragments ]';
+}
 
 // ===== Avatar Glitch on Hover =====
 const avatar = document.getElementById('avatar');
@@ -217,7 +230,7 @@ heroTitle?.addEventListener('mouseenter', () => {
 });
 
 // ===== Socket.io Chat Integration =====
-const socket = io('https://glitch404-backend-production.up.railway.app');
+const socket = io('http://localhost:4000');
 
 document.addEventListener('DOMContentLoaded', () => {
   const messageInput = document.getElementById('message-input');
