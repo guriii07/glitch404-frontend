@@ -230,7 +230,7 @@ heroTitle?.addEventListener('mouseenter', () => {
 });
 
 // ===== Socket.io Chat Integration =====
-const socket = io(`https://glitch404-frontend-production.up.railway.app`);
+const socket = io(`glitch404-backend-production.up.railway.app`);
 
 document.addEventListener('DOMContentLoaded', () => {
   const messageInput = document.getElementById('message-input');
