@@ -217,7 +217,7 @@ heroTitle?.addEventListener('mouseenter', () => {
 });
 
 // ===== Socket.io Chat Integration =====
-const socket = io('http://localhost:4000');
+const socket = io(glitch404-backend-production.up.railway.app);
 
 document.addEventListener('DOMContentLoaded', () => {
   const messageInput = document.getElementById('message-input');
