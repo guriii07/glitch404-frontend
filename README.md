@@ -1,19 +1,41 @@
-# GLITCH//404: Signal Lost in the Noise
+# ⚡ Glitch 404 — Frontend
 
-A conceptual website exploring mental health in the digital age — where identity glitches, emotions loop, and silence becomes loud.  
-Built for a hackathon project to reflect the overwhelmed minds behind the screens.
+**Live Site:** [glitch404-frontend-production.up.railway.app](https://glitch404-frontend-production.up.railway.app)
 
-### 🌀 Theme
-**GLITCH//404** represents the digital void where people feel ignored, anxious, or lost online. Each section reflects emotional states like identity loss, system overload, and emotional corruption.
+> _"Signal Lost in the Noise"_ — An interactive web experience exploring how people feel lost, overwhelmed, or ignored in the digital age.
 
-### ⚙️ Tech Stack
-- HTML, CSS, JavaScript
-- Designed from scratch — no templates
-- Deployed using GitHub Pages
-
-### 📡 Live Site
-[Visit the Live Site](https://guriii07.github.io/glitch404)
+## 📌 Overview
+Glitch 404 is a visual + interactive project that simulates the feeling of being "glitched" online.  
+The frontend delivers:
+- Immersive scrolling experience
+- Hidden sections revealed through interaction
+- Dynamic glitch effects & animations
+- Real-time chat powered by **Socket.io**
 
 ---
 
-> _“If you feel like a 404, you’re not alone.”_
+## 🛠 Tech Stack
+- **HTML5** + **CSS3** + **JavaScript**
+- **Socket.io Client** (real-time chat)
+- **Intersection Observer** (section animations)
+- **Custom Animations & Glitch Effects**
+- Deployed on **Railway**
+
+---
+
+## 🚀 Features
+✅ **Mobile & Desktop Friendly** — tap/keyboard reveal  
+✅ **Glitch Animations** — hover & scroll effects  
+✅ **Dynamic Mood Affirmations** — interactive mood cards  
+✅ **Live Chat Integration** — real-time messaging  
+✅ **Hero Thought Rotation** — animated typing text  
+
+---
+
+## 📂 Project Structure
+frontend/
+├── index.html
+├── style.css
+├── script.js
+├── assets/ # images, glitch effects, etc.
+└── README.md
